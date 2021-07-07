@@ -252,10 +252,10 @@ text-transform: capitalize;
     color: #333333;
 }
 .header-logo {
-    padding-top: 18px;
+    padding-top: 10px;
 }
 .header-logo img {
-    max-height: 31px;
+    max-height: 40px;
 }
 .nav > li > a:focus,
 .nav > li > a:hover {
@@ -337,7 +337,7 @@ ul.dropdown li a span {
     text-align:center;
 }
 .slider-wrapper-2 {
-    height: 600px;
+    height: 250px;
     text-align: center;
     background: url(../images/slider.jpg);
     background-size: cover;
@@ -1208,12 +1208,9 @@ textarea.form-control {
     width: 235px;
 }
 .subscribe-form button {
-    position: absolute;
-    right: 0;
-    top: 0;
     line-height: 45px;
     border: medium none;
-    width: 50px;
+    width: 100px;
     height: 45px;
     background-color: #2196F3;
     color: #fff;
@@ -2511,7 +2508,7 @@ a.comment-reply:hover {
 *****************************************/
 
 .single-community {
-    text-align: center;
+    margin-bottom: 60px;
 }
 .single-community .icons {
     display: inline-block;
@@ -2519,13 +2516,20 @@ a.comment-reply:hover {
     margin-bottom: 20px;
 }
 .single-community h3 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 300;
     text-transform: capitalize;
+    text-align: center;
 }
 .single-community p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
+    text-align: left;
+}
+.single-community img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .timeline {
   width: 100%;
@@ -3303,6 +3307,25 @@ a.comment-reply:hover {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
+.recent-news {
+    padding-bottom: 25px;
+}
+.single-news {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: left;
+}
+.single-news a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.single-news img {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
 .social-profile {
     background-color: rgba(53, 139, 199, .9);
     height: 100%;

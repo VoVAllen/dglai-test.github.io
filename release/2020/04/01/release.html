@@ -1,0 +1,902 @@
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Library for deep learning on graphs">
+    <meta name="keywords" content="Software, Machine Learning, Deep Learning, Neural Network, Graph">
+    <meta name="author" content="Themeix">
+
+    <!-- Site Title -->
+    <title>Deep Graph Library</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/dgl-favicon.png">
+
+    <!-- IView CSS -->
+    <link rel="stylesheet" href="//unpkg.com/iview/dist/styles/iview.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font-Awesome CSS -->
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="/assets/css/googlefont.css" rel="stylesheet"> 
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <!--<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">-->
+
+    <!-- Mean Menu CSS -->
+    <link rel="stylesheet" href="/assets/css/meanmenu.min.css">
+
+    <!-- Main Stylesheet -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="/assets/css/responsive.css" rel="stylesheet">
+
+    <!-- Minima CSS -->
+    <link href="/assets/main.css" rel="stylesheet">
+
+    <!-- Rouge Highlighter CSS -->
+    <link href="/assets/css/syntax.css" rel="stylesheet">
+
+    <link type="application/atom+xml" rel="alternate" href="https://www.dgl.ai/feed.xml" title="Deep Graph Library" />
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132455605-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132455605-1');
+</script>
+
+    
+</head>
+  
+<body>
+    <!-- Preloader starts-->
+    <div class="preloader">
+        <div class="loading-center">
+            <div class="loading-center-absolute">
+                <div class="object object_one"></div>
+                <div class="object object_two"></div>
+                <div class="object object_three"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader ends -->
+    <!-- Start Header -->
+    <header>
+      <!-- Start Mainmenu -->
+<div class="menu-area navbar-fixed-top ">
+    <div class="container">
+        <div class="row">
+            <div class="mainmenu-wrapper">
+                <!-- Start Header Logo -->
+                <div class="col-xs-12 col-md-3">
+                    <div class="header-logo">
+                        <a href="https://www.dgl.ai"><img src="/assets/images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <!-- End Header Logo -->
+                <!-- Start Navigation -->
+                <div class="col-xs-12 col-md-9">
+                    <div class="mainmenu">
+                        <div class="navbar navbar-right">
+                            <div class="navbar-header visible-xs">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse top-menu">
+
+                           <!--  Static Dropdown Menu 
+
+                                <nav>
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="https://www.dgl.ai">Home<span>Get everything</span></a>
+                                           <ul class="dropdown">
+                                               <li><a href="index.html">Home Version 1</a></li>
+                                               <li><a href="index-2.html">Home Version 2</a></li>
+                                           </ul>                                                
+                                        </li>
+                                        <li><a href="about-us.html">About<span>Know about us</span></a></li>                                
+                                        <li><a href="questions.html">Questions<span>Ask Your Question</span></a>
+                                            <ul class="dropdown">
+                                                <li>
+                                                    <a href="questions.html"> <span><i class="fa fa-question-circle"></i></span>All Questions</a>
+                                                </li>                                                       
+                                                <li><a href="ask-question.html"><span><i class="fa  fa-question-circle-o"></i></span>Ask Questions</a></li>
+                                                <li><a href="answers.html"><span><i class="fa fa-reply-all"></i></span>Answers</a></li>
+                                                <li><a href="login.html"><span><i class="fa fa-sign-in"></i></span>Login</a></li>
+                                                <li><a href="register.html"><span><i class="fa fa-registered"></i></span>Register</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Pages<span>See All Pages</span></a>
+                                           <ul class="dropdown">
+                                               <li><a href="index-2.html">Home 2</a></li>
+                                               <li><a href="blog.html">Blog</a></li>
+                                               <li><a href="blog-details.html">Blog Details</a></li>
+                                               <li><a href="questions.html">Questions</a></li>
+                                               <li><a href="answers.html">Answers</a></li>
+                                               <li><a href="updates.html">Updates</a></li>
+                                               <li><a href="contact.html">Contact</a></li>
+                                               <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                                               <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                                               <li><a href="login.html">login</a></li>
+                                               <li><a href="register.html">Register</a></li>
+                                               <li><a href="404.html">404</a></li>
+                                           </ul>
+                                        </li>
+                                        <li><a href="blog.html">Blog<span>All Blog Posts</span></a></li>
+                                        <li><a href="updates.html">Updates<span>Latest releases</span></a></li>
+                                        <li><a href="contact.html">Contact<span>Let us contact</span></a></li>
+                                    </ul>
+                                </nav> 
+
+                                End Static Dropdown Menu -->
+
+                                <nav>
+                                    <ul class="nav navbar-nav">
+                                    
+                                    
+                                    
+                                    
+                                     <li>
+                                        <a href="/pages/about.html">about
+                                          <!--<span>About DGL</span>-->
+                                        </a>
+                                     </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                     <li>
+                                        <a href="/pages/start.html">Get Started
+                                          <!--<span>Install</span>-->
+                                        </a>
+                                     </li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                     <li>
+                                        <a href="https://docs.dgl.ai/tutorials/blitz/index.html">Tutorials
+                                        </a>
+                                     </li>
+                                     <li>
+                                        <a href="/pages/index.html">Blogs
+                                        </a>
+                                     </li>
+                                     <li>
+                                        <a href="https://docs.dgl.ai">Docs
+                                        </a>
+                                     </li>
+                                     <li>
+                                        <a href="https://discuss.dgl.ai">Forum
+                                        </a>
+                                     </li>
+                                     <li>
+                                        <a href="https://github.com/dmlc/dgl">GitHub
+                                        </a>
+                                     </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Navigation -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Mainmenu -->
+<!-- Start Mobile Menu Area -->
+<div class="col-xs-12 visible-xs">
+    <div class="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                
+                
+                
+                
+                 <li>
+                    <a href="/pages/about.html">about
+                    </a>
+                 </li>
+                
+                
+                
+                
+                
+                 <li>
+                    <a href="/pages/start.html">Get Started
+                    </a>
+                 </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <!--
+                <li><a href="#">Questions</a>
+                    <ul>
+                        <li><a href="questions.html"> Questions</a></li>
+                        <li><a href="ask-question.html">Ask Questions</a></li>
+                        <li><a href="answers.html">Answers</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>                               
+                    </ul>
+                </li>
+                <li><a href="#">Pages</a>
+                    <ul>
+                       <li><a href="blog.html">Blog</a></li>
+                       <li><a href="blog-details.html">Blog Details</a></li>
+                       <li><a href="questions.html">Questions</a></li>
+                       <li><a href="answers.html">Answers</a></li>
+                       <li><a href="updates.html">Updates</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                       <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                       <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                       <li><a href="login.html">login</a></li>
+                       <li><a href="register.html">Register</a></li>
+                       <li><a href="404.html">404</a></li>                          
+                    </ul>
+                </li>                       
+                -->
+                <li><a href="https://docs.dgl.ai/tutorials/blitz/index.html">Tutorials</a></li>
+                <li><a href="/pages/index.html">Blogs</a></li>
+                <li><a href="https://docs.dgl.ai">Docs</a></li>
+                <li><a href="https://discuss.dgl.ai">Forum</a></li>
+                <li><a href="https://github.com/dmlc/dgl">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- End MObile Menu Area
+
+   </header>
+    <!-- End Header -->
+<!-- Start Page Banner Area -->
+<div class="page-banner-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-title">
+          <h2>Blog Details</h2>
+          <span class="sub-title"><a href="https://www.dgl.ai">Home</a> / Blog Details</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Pages Banner Area -->
+
+<!-- Start Blog Area -->
+<section class="blog-area themeix-ptb">
+  <div class="container">
+    <div class="row">
+      <!-- Start Blog Content -->
+      <div class="col-md-12">
+        <div class="blog-wrapper">
+
+          <div class="single-blog-details">
+            <div class="blog-img">
+              <img src="/assets/images/release-blog-image.jpg" alt="blog">
+            </div>
+            <div class="blog-content-desc">
+              <h4 class="themeix-blog-h">What is new in DGL v0.4.3 release?</h4>
+              <p><p>The DGL v0.4.3 release brings many new features for an enhanced usability and
+system efficiency. The article takes a peek at some of the major highlights.</p>
+
+<h2 id="tensorflow-support">TensorFlow support</h2>
+
+<p>DGL finally comes to the TensorFlow community starting from this release.
+Switching to TensorFlow is easy. If you are a first-time user, please install
+DGL and <code class="highlighter-rouge">import dgl</code>, and then follow the instructions to set the default
+backend. You can always switch back by changing the <code class="highlighter-rouge">config.json</code> file, which is
+under <code class="highlighter-rouge">~/.dgl</code> folder. DGL keeps a coherent user experience regardless of which
+backend is currently in use. The following code demonstrates the basic steps to
+apply a graph convolution layer.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<span class="kn">import</span> <span class="nn">dgl.nn</span> <span class="kn">as</span> <span class="nn">dglnn</span>
+
+<span class="c"># Random features for 10 nodes; each is of length 5.</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="c"># Random graph; 10 nodes and 20 edges.</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">dgl</span><span class="o">.</span><span class="n">rand_graph</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="c"># Pre-defined graph convolution module.</span>
+<span class="n">conv</span> <span class="o">=</span> <span class="n">dglnn</span><span class="o">.</span><span class="n">GraphConv</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">conv</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>  <span class="c"># Apply the graph convolution layer.</span>
+</code></pre>
+</div>
+
+<p>We have implemented and released 15 common GNN modules in TensorFlow (more are
+coming), all of which can be invoked in one line of codes.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GraphConv</code> from the <a href="https://arxiv.org/abs/1609.02907">Graph Convolutional Networks</a> paper.</li>
+  <li><code class="highlighter-rouge">GATConv</code> from the <a href="https://arxiv.org/pdf/1710.10903.pdf">Graph Attention Networks</a> paper.</li>
+  <li><code class="highlighter-rouge">SAGEConv</code> from the <a href="https://arxiv.org/pdf/1706.02216.pdf">Inductive Representation Learning on Large Graphs</a> paper (a.k.a. GraphSAGE).</li>
+  <li><code class="highlighter-rouge">GINConv</code> from the <a href="https://arxiv.org/pdf/1810.00826.pdf">How Powerful are Graph Neural Networks</a> paper.</li>
+  <li><code class="highlighter-rouge">RelGraphConv</code> from the <a href="https://arxiv.org/abs/1703.06103">Modeling Relational Data with Graph Convolutional Networks</a> paper.</li>
+  <li><code class="highlighter-rouge">SGConv</code> from the <a href="https://arxiv.org/pdf/1902.07153.pdf">Simplifying Graph Convolutional Networks</a> paper.</li>
+  <li><code class="highlighter-rouge">APPNPConv</code> from the <a href="https://arxiv.org/pdf/1810.05997.pdf">Predict then Propagate: Graph Neural Networks meet Personalized PageRank</a> paper.</li>
+  <li>An <code class="highlighter-rouge">edge_softmax</code> function for computing softmax over the neighboring edges of each vertex.</li>
+  <li>Various pooling layers: <code class="highlighter-rouge">SumPooling</code>, <code class="highlighter-rouge">AvgPooling</code>, <code class="highlighter-rouge">MaxPooling</code>, <code class="highlighter-rouge">SortPooling</code>, <code class="highlighter-rouge">WeightAndSum</code>, and <code class="highlighter-rouge">GlobalAttentionPooling</code>.</li>
+  <li>A <code class="highlighter-rouge">HeteroGraphConv</code> module for applying GNN modules to heterogeneous graphs.</li>
+</ul>
+
+<p>Our preliminary benchmark shows strong performance improvement against other
+TF-based tools for GNNs in terms of both training speed (measured by epoch
+running time in seconds) and memory consumption.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dateset</th>
+      <th>Model</th>
+      <th>DGL</th>
+      <th>GraphNet</th>
+      <th>tf_geometric</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Core</td>
+      <td>GCN</td>
+      <td>0.0148</td>
+      <td>0.0152</td>
+      <td>0.0192</td>
+    </tr>
+    <tr>
+      <td>Reddit</td>
+      <td>GCN</td>
+      <td>0.1095</td>
+      <td>OOM</td>
+      <td>OOM</td>
+    </tr>
+    <tr>
+      <td>PubMed</td>
+      <td>GCN</td>
+      <td>0.0156</td>
+      <td>0.0553</td>
+      <td>0.0185</td>
+    </tr>
+    <tr>
+      <td>PPI</td>
+      <td>GCN</td>
+      <td>0.09</td>
+      <td>0.16</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Cora</td>
+      <td>GAT</td>
+      <td>0.0442</td>
+      <td>n/a</td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td>PPI</td>
+      <td>GAT</td>
+      <td>0.398</td>
+      <td>n/a</td>
+      <td>0.752</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>To get started, install <a href="https://www.dgl.ai/pages/start.html">DGL</a> and check out the examples <a href="https://github.com/dmlc/dgl/tree/master/examples/tensorflow">here</a>.</p>
+
+<h2 id="dgl-ke-a-light-speed-package-for-learning-knowledge-graph-embeddings">DGL-KE: A light-speed package for learning knowledge graph embeddings</h2>
+<p>Previously incubated under the DGL main repository, DGL-KE now officially
+announces its 0.1 release as a standalone package. The key highlights are:</p>
+
+<ul>
+  <li>Effortlessly generate knowledge graph embedding with one line of code.</li>
+  <li>Support for giant graphs with millions of nodes and edges.</li>
+  <li>Distributed training with highly-optimized graph partitioning, negative
+sampling and communication, which can be deployed on both multi-GPU machines
+and multi-machine clusters.</li>
+</ul>
+
+<p>DGL-KE can be installed with pip:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pip install dglke
+</code></pre>
+</div>
+
+<p>The following command trains embeddings of the full FreeBase graph (over 86M nodes
+and 338M edges) with 8 GPUs.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>dglke_train --model TransE_l2 --dataset Freebase --batch_size 1000 <span class="se">\</span>
+            --neg_sample_size 200 --hidden_dim 400 --gamma 10 --lr 0.1 <span class="se">\</span>
+            --regularization_coef 1e-9 -adv --gpu 0 1 2 3 4 5 6 7 <span class="se">\</span>
+            --max_step 320000 --log_interval 10000 --async_update <span class="se">\</span>
+            --rel_part --force_sync_interval 10000
+</code></pre>
+</div>
+
+<p>DGL-KE is designed for learning at scale and speed. Our benchmark on the full
+FreeBase graph shows that DGL-KE can train
+embeddings under 100 minutes on an 8-GPU machine and under 30 minutes on a 4-machine
+cluster (48 cores/machine). These results represent a 2×∼5× speedup over the
+best competing approaches.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><center>DGL-KE v.s. PyTorch-BigGraph on FreeBase</center></th>
+      <th><center>DGL-KE v.s. GraphVite on FB15k</center></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://github.com/awslabs/dgl-ke/raw/master/img/vs-pbg-fb.png" alt="" width="600x" /></td>
+      <td><img src="https://github.com/awslabs/dgl-ke/raw/master/img/vs-gv-fb15k.png" alt="" width="600x" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Check out our new GitHub repository, examples and documentations under
+<a href="https://github.com/awslabs/dgl-ke">https://github.com/awslabs/dgl-ke</a></p>
+
+<h2 id="dgl-lifesci-bringing-graph-neural-networks-to-chemistry-and-biology">DGL-LifeSci: Bringing Graph Neural Networks to Chemistry and Biology</h2>
+
+<p>Previously incubated as a model zoo for chemistry, DGL-LifeSci is now spun off
+as a standalone package. The key highlights are:</p>
+
+<ul>
+  <li>Training scripts and pre-trained models for various applications — molecular
+property prediction, generative models, and reaction prediction.</li>
+  <li>Up to 5.5x model training speedup compared to previous implementations.</li>
+  <li>Well defined pipelines for data processing, model construction and
+evaluation.</li>
+</ul>
+
+<p>DGL-LifeSci can be installed with pip or conda.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pip install dgllife
+conda install -c dglteam dgllife
+</code></pre>
+</div>
+
+<p>A summary of speedup in seconds per epoch of training:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Original Implementations</th>
+      <th>DGL-LifeSci Implementations</th>
+      <th>Speedup</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GCN on Tox21</td>
+      <td>5.5 (DeepChem)</td>
+      <td>1</td>
+      <td>5.5x</td>
+    </tr>
+    <tr>
+      <td>AttentiveFP on Aromaticity</td>
+      <td>6</td>
+      <td>1.2</td>
+      <td>5x</td>
+    </tr>
+    <tr>
+      <td>JTNN on ZINC</td>
+      <td>1826</td>
+      <td>743</td>
+      <td>2.5x</td>
+    </tr>
+    <tr>
+      <td>WLN for reaction center prediction</td>
+      <td>11657</td>
+      <td>5095</td>
+      <td>2.3x</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>To get started, check out the examples and documentations under
+<a href="https://github.com/awslabs/dgl-lifesci">https://github.com/awslabs/dgl-lifesci</a>.</p>
+
+<h2 id="experimenting-new-apis-for-sampling">Experimenting new APIs for sampling</h2>
+
+<p>Sampling is crucial to training GNNs on giant graphs. In this release, we
+re-design the APIs for sampling, aiming for a more intuitive programming
+experience and a better performance at the same time. The new APIs have several
+advantages:</p>
+
+<ul>
+  <li>Support a wide range of sampling-based GNN models, including PinSAGE,
+GraphSAGE, Graph Convolutional Matrix Completion (GCMC), and etc.</li>
+  <li>Support customization in Python.</li>
+  <li>Support heterogeneous graphs.</li>
+  <li>Leverage all pre-defined NN modules with no code change.</li>
+  <li>Utilize both multi-processing and multi-threading for maximum speed.</li>
+</ul>
+
+<p>The code below defines a basic neighbor sampler:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">NeighborSampler</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">fanouts</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">g</span>  <span class="c"># The full graph structure</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fanouts</span> <span class="o">=</span> <span class="n">fanouts</span>  <span class="c"># fan-out of each layer</span>
+
+    <span class="k">def</span> <span class="nf">sample_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seeds</span><span class="p">):</span>
+        <span class="c"># `seeds` are the set of nodes to build one sample from.</span>
+        <span class="n">blocks</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">fanout</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">fanouts</span><span class="p">:</span>
+            <span class="c"># For each seed node, sample ``fanout`` neighbors.</span>
+            <span class="n">frontier</span> <span class="o">=</span> <span class="n">dgl</span><span class="o">.</span><span class="n">sampling</span><span class="o">.</span><span class="n">sample_neighbors</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">seeds</span><span class="p">,</span> <span class="n">fanout</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+            <span class="c"># Then we compact the frontier into a bipartite graph for message passing.</span>
+            <span class="n">block</span> <span class="o">=</span> <span class="n">dgl</span><span class="o">.</span><span class="n">to_block</span><span class="p">(</span><span class="n">frontier</span><span class="p">,</span> <span class="n">seeds</span><span class="p">)</span>
+            <span class="c"># Obtain the seed nodes for next layer.</span>
+            <span class="n">seeds</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">srcdata</span><span class="p">[</span><span class="n">dgl</span><span class="o">.</span><span class="n">NID</span><span class="p">]</span>
+
+            <span class="n">blocks</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">block</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">blocks</span>
+</code></pre>
+</div>
+
+<p>Although these APIs are still experimental, you can find their usages in many
+examples:</p>
+
+<ul>
+  <li>Train the GraphSAGE model by neighbor sampling and scale it to multiple GPUs
+(<a href="https://github.com/dmlc/dgl/tree/master/examples/pytorch/graphsage">link</a>).</li>
+  <li>Train the Relational GCN model on heterogeneous graphs by sampling for both
+node classification and link prediction (<a href="https://github.com/dmlc/dgl/tree/master/examples/pytorch/rgcn-hetero">link</a>).</li>
+  <li>Train the PinSAGE model by random walk sampling for item recommendation (<a href="https://github.com/dmlc/dgl/pull/1334">link</a>).</li>
+  <li>Train the GCMC model by sampling for MovieLens rating prediction (<a href="https://github.com/dmlc/dgl/pull/1296">link</a>).</li>
+  <li>Implement the variance reduction technique for neighbor sampling (<a href="https://github.com/dmlc/dgl/pull/1355">link</a>) proposed by <a href="https://arxiv.org/abs/1710.10568">Chen et al.</a></li>
+</ul>
+
+<p>We will continue polishing these APIs, and the corresponding documentations and
+tutorials are coming.</p>
+
+<h2 id="other-improvements">Other Improvements</h2>
+
+<ul>
+  <li>All GNN modules under <code class="highlighter-rouge">dgl.nn</code> now support both homogeneous graph and bipartite graph.</li>
+  <li><code class="highlighter-rouge">DGLHeteroGraph</code> now has a faster pickling/unpickling implementation.</li>
+  <li>Add new APIs for saving and loading <code class="highlighter-rouge">DGLHeteroGraph</code> from checkpoints.</li>
+  <li><code class="highlighter-rouge">BatchedDGLGraph</code> and <code class="highlighter-rouge">DGLSubGraph</code> classes have been merged to <code class="highlighter-rouge">DGLGraph</code>.</li>
+  <li>Constructing <code class="highlighter-rouge">DGLGraph</code> no longer requires a <code class="highlighter-rouge">multigraph</code> flag.</li>
+</ul>
+
+<p>More details can be found in the <a href="https://github.com/dmlc/dgl/releases/tag/0.4.3">full release note</a>.</p>
+</p>
+              <div class="blog-post-date">
+                <p>01 <span>April</span> </p>
+              </div>
+              <div class="tag-links mt-30">
+                <div class="widget">
+                  <div class="tagcloud">
+                    <a href="/tag/blog.html" class="set-3">blog</a> <a href="/tag/news.html" class="set-2">news</a> <a href="/tag/release.html" class="set-5">release</a>
+                  </div>
+                </div>
+                <div class="blog-data">
+                  <p>By 
+                  
+                  <a href="https://github.com/dmlc/dgl/">DGLTeam</a>,
+                   in <a href="#">release</a> </p>
+                </div>
+              </div>
+              <!-- Leave a Comment -->
+              <div id="respond">
+                <div class="comment-respond pb-50">
+                  <div id='discourse-comments'></div>
+                  <script type="text/javascript">
+  DiscourseEmbed = { discourseUrl: 'https://discuss.dgl.ai/',
+                     discourseEmbedUrl: 'https://www.dgl.ai/release/2020/04/01/release.html' };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
+
+                </div>
+              </div>
+              <!-- End Leave a Comment -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Blog Content -->
+      <!-- Start Blog Sidebar -->
+      <!--
+      <div class="col-md-3">
+        <div class="row">
+          <div class="blog-sidebar">
+            <div class="col-md-12 col-sm-6">
+              <aside id="dwqa-categories-2" class="widget widget_categories dwqa_widget dwqa_widget_categories sidebar-list">
+                <h4 class="list-title">Categories</h4>
+<ul>
+	
+	
+    
+	 <li><a href="topics/AngularJS">AngularJS</a></li> 
+	
+
+</ul>
+
+
+
+              </aside>
+            </div>
+            <div class="col-md-12 col-sm-6">
+              <aside class="widget dwqa-widget dwqa-popular-question">
+                <div class="sidebar-popular-post dwqa-popular-questions">
+                  <div class="popular-questions"> 
+<h2 class="widget-title">Popular Questions</h2>
+<ul>
+
+    
+
+    
+     <li><a href="/category_one/question_two">Can I Start Learning AngularJS Framework ?</a></li>
+    
+     <li><a href="/category_one/question_one">What is AngularJS ?</a></li>
+    
+
+    
+    
+     <li><a href="/category_two/question_three">How Can I Learning ReactJS Framework ?</a></li>
+    
+     <li><a href="/category_two/question_two">How Can I Learning ReactJS Framework ?</a></li>
+    
+
+    
+    
+     <li><a href="/category_three/question_three">Can I Learning EmberJS Framework ?</a></li>
+    
+     <li><a href="/category_three/question_two">How Can I Learning EmberJS Framework ?</a></li>
+    
+
+    
+    
+     <li><a href="/category_four/question_one">What is VueJS ?</a></li>
+    
+     <li><a href="/category_four/question_two">How Can I Learning VueJS Framework ?</a></li>
+    
+
+ </ul>
+</div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+      <!-- End Blog Sidebar -->
+    </div>
+  </div>
+</section>
+<!-- End Blog Area -->
+
+
+    <!-- Start Footer Area -->
+    <footer>
+        <div class="footer-area themeix-ptb">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-wrapper">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="single-footer">
+                                <h3 class="footer-heading">Follow Us</h3>
+                                <div class="single-footer-text">
+                                    <p>Keep track the latest news, blogs and updates of DGL by following our social media accounts.</p>
+                                </div>
+                                <div class="social-links">
+                                    <ul>
+                                        <li><a href="https://twitter.com/GraphDeep"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="fb-link"><a href="https://www.facebook.com/GraphDeep/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="/feed.xml"><i class="fa fa-rss"></i></a></li>
+                                        <!--<li class="gp-link"><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="single-footer">
+                                <h3 class="footer-heading">Quick Links</h3>
+                                <div class="footer-list">
+                                    <ul>
+                                        <li><a href="/pages/about.html">About us</a></li>
+                                        <li><a href="/pages/start.html">Get started</a></li>
+                                        <li><a href="https://github.com/dmlc/dgl/releases">Latest updates</a></li>
+                                        <li><a href="/pages/index.html">Blogs</a></li>
+                                        <li><a href="https://github.com/dmlc/dgl/">Github</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="single-footer">
+                                <h3 class="footer-heading">Materials</h3>
+                                <div class="footer-list">
+                                    <ul>
+                                        <li><a href="https://docs.dgl.ai/tutorials/models/index.html">Tutorials</a></li>
+                                        <li><a href="https://discuss.dgl.ai">Discuss forum</a></li>
+                                        <li><a href="https://github.com/dmlc/dgl/issues">Github issues</a></li>
+                                        <li><a href="https://github.com/dmlc/dgl/blob/master/CONTRIBUTORS.md">Contributing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="single-footer">
+                                <h3 class="footer-heading">Contact Us</h3>
+                                <div class="subscribe-form">
+                                    <form action="https://formspree.io/f/maylbdvy" method="POST">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                                        <input type="text" name="message" id="message" class="form-control" placeholder="Message" required>
+                                        <input type="email" name="_replyto" id="email" class="form-control" placeholder="Email" required>
+                                        <button type="submit" class="hover-bg">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom Area -->
+        <!--
+        <div class="footer-bottom-area themeix-pb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="footer-bottom">
+                            <div class="footer-logo">
+                                <a href="#"><img src="/assets/images/footer-logo.png" alt="logo"></a>
+                            </div>
+                            <div class="footer-links">
+                                <ul>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Refund Policy</a></li>
+                                    <li><a href="#">Disclaimer</a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright-text">
+                                <p>All content Documenter &copy; 2017 - All rights reserved. - Proudly made with <a href="http://designingmarket.com">Designing Market</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <!-- End Footer Bottom Area -->
+        <!-- Start Scroll To Top -->
+        <div class="scroll-top">
+            <div class="scroll-icon">
+                <i class="fa fa-angle-up"></i>
+            </div>
+        </div>
+        <!-- End Scroll To Top -->
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- jquery min -->
+    <script src="/assets/js/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.1/js/jquery.dataTables.min.js"></script>
+    
+
+    <!-- Bootstrap Js -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Easing -->
+    <script src="/assets/js/jquery.easing.js"></script>
+
+    <!-- Owl Carousel Js -->
+    <script src="/assets/js/owl.carousel.min.js"></script>
+
+    <!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOCx7VEftKaGSK2F2p_tUKmMSdN00palo"></script> -->
+
+    <!-- Mean Menu -->
+    <script src="/assets/js/jquery.meanmenu.js"></script>
+
+    <!-- Particles JS CDN -->
+    <script src="/assets/js/particles.min.js"></script> 
+
+    <!-- Main Js -->
+    <script src="/assets/js/main.js"></script>
+
+    <!-- MathJax Js -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</body>
+
+</html>

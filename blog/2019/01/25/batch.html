@@ -11,7 +11,7 @@
     <title>Deep Graph Library</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon-2.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/dgl-favicon.png">
 
     <!-- IView CSS -->
     <link rel="stylesheet" href="//unpkg.com/iview/dist/styles/iview.css">
@@ -30,6 +30,8 @@
 
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <!--<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">-->
 
     <!-- Mean Menu CSS -->
     <link rel="stylesheet" href="/assets/css/meanmenu.min.css">
@@ -161,11 +163,9 @@
                                     
                                      <li>
                                         <a href="/pages/about.html">about
-                                          <span>About DGL</span>
+                                          <!--<span>About DGL</span>-->
                                         </a>
                                      </li>
-                                    
-                                    
                                     
                                     
                                     
@@ -173,7 +173,7 @@
                                     
                                      <li>
                                         <a href="/pages/start.html">Get Started
-                                          <span>Install</span>
+                                          <!--<span>Install</span>-->
                                         </a>
                                      </li>
                                     
@@ -192,29 +192,40 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                      <li>
-                                        <a href="https://docs.dgl.ai/tutorials/models/index.html">Tutorials
-                                          <span>Tutorials</span>
+                                        <a href="https://docs.dgl.ai/tutorials/blitz/index.html">Tutorials
                                         </a>
                                      </li>
                                      <li>
-                                        <a href="/pages/index.html">Blog
-                                          <span>Blog Posts</span>
+                                        <a href="/pages/index.html">Blogs
                                         </a>
                                      </li>
                                      <li>
-                                        <a href="https://docs.dgl.ai">Doc
-                                          <span>Documents</span>
+                                        <a href="https://docs.dgl.ai">Docs
                                         </a>
                                      </li>
                                      <li>
                                         <a href="https://discuss.dgl.ai">Forum
-                                          <span>Discuss Forum</span>
                                         </a>
                                      </li>
                                      <li>
                                         <a href="https://github.com/dmlc/dgl">GitHub
-                                          <span>Source Codes</span>
                                         </a>
                                      </li>
                                     </ul>
@@ -235,8 +246,55 @@
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="https://docs.dgl.ai/#get-started">Get Started</a></li>
-                <li><a href="/pages/about.html">About</a></li>
+                
+                
+                
+                
+                 <li>
+                    <a href="/pages/about.html">about
+                    </a>
+                 </li>
+                
+                
+                
+                
+                
+                 <li>
+                    <a href="/pages/start.html">Get Started
+                    </a>
+                 </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 <!--
                 <li><a href="#">Questions</a>
                     <ul>
@@ -263,10 +321,9 @@
                     </ul>
                 </li>                       
                 -->
-                <li><a href="https://docs.dgl.ai/tutorials/models/index.html">Tutorials</a></li>
-                <li><a href="/pages/index.html">Blog</a></li>
-                <li><a href="https://docs.dgl.ai">Documents</a></li>
-                <li><a href="/pages/updates.html">Updates</a></li>
+                <li><a href="https://docs.dgl.ai/tutorials/blitz/index.html">Tutorials</a></li>
+                <li><a href="/pages/index.html">Blogs</a></li>
+                <li><a href="https://docs.dgl.ai">Docs</a></li>
                 <li><a href="https://discuss.dgl.ai">Forum</a></li>
                 <li><a href="https://github.com/dmlc/dgl">GitHub</a></li>
             </ul>
@@ -302,7 +359,7 @@
 
           <div class="single-blog-details">
             <div class="blog-img">
-              <img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/batch/dataset_overview.png" alt="blog">
+              <img src="https://data.dgl.ai/tutorial/batch/dataset_overview.png" alt="blog">
             </div>
             <div class="blog-content-desc">
               <h4 class="themeix-blog-h">Batched Graph Classification with DGL</h4>
@@ -327,7 +384,7 @@ networks to this problem has been a popular approach recently (<a href="https://
 <p>In this tutorial, we will learn how to perform <em>batched</em> graph classification
 with DGL via a toy example of classifying 8 types of regular graphs as below:</p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/batch/dataset_overview.png" alt="task" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/batch/dataset_overview.png" alt="task" class="aligncenter" /></p>
 
 <p>We implement this <a href="https://docs.dgl.ai/api/python/data.html">Mini Graph Classification
 Dataset</a> in DGL. The dataset has 8
@@ -363,7 +420,7 @@ challenges:</p>
 batch of graphs can be viewed as a large graph that have many disjoint
 connected components. Below is a visualization that gives the general idea:</p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/batch/batch.png" alt="batch" height="600px" width="600px" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/batch/batch.png" alt="batch" height="600px" width="600px" class="aligncenter" /></p>
 
 <p>For example, we can define the following <code class="highlighter-rouge">collate</code> function to form a
 mini-batch from a given list of graph and label pairs (as provided by the
@@ -388,7 +445,7 @@ efficiency.</p>
 
 <p>The graph classification can be proceeded as follows:</p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/batch/graph_classifier.png" alt="model" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/batch/graph_classifier.png" alt="model" class="aligncenter" /></p>
 
 <p>From a batch of graphs, we first perform message passing/graph convolution for
 nodes to “communicate” with others. After message passing, we compute a tensor
@@ -545,15 +602,15 @@ accuracy is typically higher and can reach up to 91%.</p>
 <p>Below is an animation where we plot graphs with the probability a trained model
 assigns its ground truth label to it:</p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/batch/test_eval4.gif" alt="anim" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/batch/test_eval4.gif" alt="anim" class="aligncenter" /></p>
 
 <p>To understand how the node/graph features change over layers with a trained
 model, we use <a href="https://lvdmaaten.github.io/tsne/">t-SNE</a> for dimensionality
 reduction and visualization.</p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/batch/tsne_node2.png" alt="" height="600px" width="800px" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/batch/tsne_node2.png" alt="" height="600px" width="800px" class="aligncenter" /></p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/batch/tsne_graph2.png" alt="" height="600px" width="800px" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/batch/tsne_graph2.png" alt="" height="600px" width="800px" class="aligncenter" /></p>
 
 <p>The two small figures on the top separately visualize node features after ,
 graph convolution layer #1 and #2, and the figure on the bottom visualizes the
@@ -588,7 +645,7 @@ VAE</a>.</li>
               <div class="tag-links mt-30">
                 <div class="widget">
                   <div class="tagcloud">
-                    <a href="/tag/blog.html" class="set-5">blog</a> <a href="/tag/release.html" class="set-1">release</a>
+                    <a href="/tag/blog.html" class="set-3">blog</a> <a href="/tag/news.html" class="set-2">news</a> <a href="/tag/release.html" class="set-5">release</a>
                   </div>
                 </div>
                 <div class="blog-data">
@@ -725,7 +782,7 @@ VAE</a>.</li>
                                     <ul>
                                         <li><a href="/pages/about.html">About us</a></li>
                                         <li><a href="/pages/start.html">Get started</a></li>
-                                        <li><a href="/pages/updates.html">Latest updates</a></li>
+                                        <li><a href="https://github.com/dmlc/dgl/releases">Latest updates</a></li>
                                         <li><a href="/pages/index.html">Blogs</a></li>
                                         <li><a href="https://github.com/dmlc/dgl/">Github</a></li>
                                     </ul>
@@ -745,21 +802,19 @@ VAE</a>.</li>
                                 </div>
                             </div>
                         </div>
-                        <!--
                         <div class="col-sm-6 col-md-3">
                             <div class="single-footer">
-                                <h3 class="footer-heading">get support</h3>
-                                <p>Don’t miss our latest realeses and important updates</p>
+                                <h3 class="footer-heading">Contact Us</h3>
                                 <div class="subscribe-form">
-                                    <form action="https://formspree.io/your@email.com" method="post">
-                                        <input type="email" name="subscribe" id="subscribe" class="form-control" placeholder="Email" required>
-                                        <button type="submit" class="hover-bg">Go</button>
+                                    <form action="https://formspree.io/f/maylbdvy" method="POST">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                                        <input type="text" name="message" id="message" class="form-control" placeholder="Message" required>
+                                        <input type="email" name="_replyto" id="email" class="form-control" placeholder="Email" required>
+                                        <button type="submit" class="hover-bg">Submit</button>
                                     </form>
-                                    <span>We never do spam with you</span>
                                 </div>
                             </div>
                         </div>
-                        -->
                     </div>
                 </div>
             </div>
@@ -803,6 +858,11 @@ VAE</a>.</li>
 
     <!-- jquery min -->
     <script src="/assets/js/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.1/js/jquery.dataTables.min.js"></script>
+    
 
     <!-- Bootstrap Js -->
     <script src="/assets/js/bootstrap.min.js"></script>

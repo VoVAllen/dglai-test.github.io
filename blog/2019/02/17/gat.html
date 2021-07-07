@@ -11,7 +11,7 @@
     <title>Deep Graph Library</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon-2.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/dgl-favicon.png">
 
     <!-- IView CSS -->
     <link rel="stylesheet" href="//unpkg.com/iview/dist/styles/iview.css">
@@ -30,6 +30,8 @@
 
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <!--<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">-->
 
     <!-- Mean Menu CSS -->
     <link rel="stylesheet" href="/assets/css/meanmenu.min.css">
@@ -161,11 +163,9 @@
                                     
                                      <li>
                                         <a href="/pages/about.html">about
-                                          <span>About DGL</span>
+                                          <!--<span>About DGL</span>-->
                                         </a>
                                      </li>
-                                    
-                                    
                                     
                                     
                                     
@@ -173,7 +173,7 @@
                                     
                                      <li>
                                         <a href="/pages/start.html">Get Started
-                                          <span>Install</span>
+                                          <!--<span>Install</span>-->
                                         </a>
                                      </li>
                                     
@@ -192,29 +192,40 @@
                                     
                                     
                                     
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                                      <li>
-                                        <a href="https://docs.dgl.ai/tutorials/models/index.html">Tutorials
-                                          <span>Tutorials</span>
+                                        <a href="https://docs.dgl.ai/tutorials/blitz/index.html">Tutorials
                                         </a>
                                      </li>
                                      <li>
-                                        <a href="/pages/index.html">Blog
-                                          <span>Blog Posts</span>
+                                        <a href="/pages/index.html">Blogs
                                         </a>
                                      </li>
                                      <li>
-                                        <a href="https://docs.dgl.ai">Doc
-                                          <span>Documents</span>
+                                        <a href="https://docs.dgl.ai">Docs
                                         </a>
                                      </li>
                                      <li>
                                         <a href="https://discuss.dgl.ai">Forum
-                                          <span>Discuss Forum</span>
                                         </a>
                                      </li>
                                      <li>
                                         <a href="https://github.com/dmlc/dgl">GitHub
-                                          <span>Source Codes</span>
                                         </a>
                                      </li>
                                     </ul>
@@ -235,8 +246,55 @@
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="https://docs.dgl.ai/#get-started">Get Started</a></li>
-                <li><a href="/pages/about.html">About</a></li>
+                
+                
+                
+                
+                 <li>
+                    <a href="/pages/about.html">about
+                    </a>
+                 </li>
+                
+                
+                
+                
+                
+                 <li>
+                    <a href="/pages/start.html">Get Started
+                    </a>
+                 </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 <!--
                 <li><a href="#">Questions</a>
                     <ul>
@@ -263,10 +321,9 @@
                     </ul>
                 </li>                       
                 -->
-                <li><a href="https://docs.dgl.ai/tutorials/models/index.html">Tutorials</a></li>
-                <li><a href="/pages/index.html">Blog</a></li>
-                <li><a href="https://docs.dgl.ai">Documents</a></li>
-                <li><a href="/pages/updates.html">Updates</a></li>
+                <li><a href="https://docs.dgl.ai/tutorials/blitz/index.html">Tutorials</a></li>
+                <li><a href="/pages/index.html">Blogs</a></li>
+                <li><a href="https://docs.dgl.ai">Docs</a></li>
                 <li><a href="https://discuss.dgl.ai">Forum</a></li>
                 <li><a href="https://github.com/dmlc/dgl">GitHub</a></li>
             </ul>
@@ -302,7 +359,7 @@
 
           <div class="single-blog-details">
             <div class="blog-img">
-              <img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/gat/cora-attention.png" alt="blog">
+              <img src="https://data.dgl.ai/tutorial/gat/cora-attention.png" alt="blog">
             </div>
             <div class="blog-content-desc">
               <h4 class="themeix-blog-h">Understand Graph Attention Network</h4>
@@ -348,7 +405,7 @@ employs the same update rule except that they set <script type="math/tex">c_{ij}
 normalized convolution operation. Below are the equations to compute the node
 embedding <script type="math/tex">h_i^{(l+1)}</script> of layer <script type="math/tex">l+1</script> from the embeddings of layer <script type="math/tex">l</script>:</p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/gat/gat.png" alt="" width="450x" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/gat/gat.png" alt="" width="450x" class="aligncenter" /></p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \begin{align}
@@ -648,7 +705,7 @@ attention weights of the last <code class="highlighter-rouge">GATLayer</code>. T
 their labels, whereas the edges are colored according to the magnitude of the
 attention weights, which can be referred with the colorbar on the right.</p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/gat/cora-attention.png" alt="" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/gat/cora-attention.png" alt="" class="aligncenter" /></p>
 
 <p>You can that the model seems to learn different attention weights. To
 understand the distribution more thoroughly, we measure the
@@ -670,11 +727,11 @@ be different. Therefore, we plot the aggregated histogram of entropy values of
 all nodes in the entire graph. Below are the attention histogram of learned by
 each attention head.</p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/gat/cora-attention-hist.png" alt="" /></p>
+<p><img src="https://data.dgl.ai/tutorial/gat/cora-attention-hist.png" alt="" /></p>
 
 <p>As a reference, here is the histogram if all the nodes have uniform attention weight distribution.</p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/gat/cora-attention-uniform-hist.png" alt="" width="400x" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/gat/cora-attention-uniform-hist.png" alt="" width="400x" class="aligncenter" /></p>
 
 <p>One can see that <strong>the attention values learned is quite similar to uniform
 distribution</strong> (i.e, all neighbors are equally important). This partially
@@ -733,7 +790,7 @@ performance.</p>
 curves of GAT and GCN are presented below; what is evident is the dramatic
 performance adavantage of GAT over GCN.</p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/gat/ppi-curve.png" alt="ppi-curve" width="500x" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/gat/ppi-curve.png" alt="ppi-curve" width="500x" class="aligncenter" /></p>
 
 <p>As before, we can have a statistical understanding of the attentions learnt by
 showing the histogram plot for the node-wise attention entropy. Below are the
@@ -741,19 +798,19 @@ attention histogram learnt by different attention layers.</p>
 
 <p><em>Attention learnt in layer 1:</em></p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/gat/ppi-first-layer-hist.png" alt="" width="600px" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/gat/ppi-first-layer-hist.png" alt="" width="600px" class="aligncenter" /></p>
 
 <p><em>Attention learnt in layer 2:</em></p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/gat/ppi-second-layer-hist.png" alt="" width="600px" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/gat/ppi-second-layer-hist.png" alt="" width="600px" class="aligncenter" /></p>
 
 <p><em>Attention learnt in final layer:</em></p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/gat/ppi-final-layer-hist.png" alt="" width="600px" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/gat/ppi-final-layer-hist.png" alt="" width="600px" class="aligncenter" /></p>
 
 <p>Again, comparing with uniform distribution:</p>
 
-<p><img src="https://s3.us-east-2.amazonaws.com/dgl.ai/tutorial/gat/ppi-uniform-hist.png" alt="" width="300px" class="aligncenter" /></p>
+<p><img src="https://data.dgl.ai/tutorial/gat/ppi-uniform-hist.png" alt="" width="300px" class="aligncenter" /></p>
 
 <p>Clearly, <strong>GAT does learn sharp attention weights</strong>! There is a clear pattern
 over the layers as well: <strong>the attention gets more sharper with higher layer</strong>.</p>
@@ -785,7 +842,7 @@ parallelizing multiple attention heads and SPMV optimization.</li>
               <div class="tag-links mt-30">
                 <div class="widget">
                   <div class="tagcloud">
-                    <a href="/tag/blog.html" class="set-5">blog</a> <a href="/tag/release.html" class="set-1">release</a>
+                    <a href="/tag/blog.html" class="set-3">blog</a> <a href="/tag/news.html" class="set-2">news</a> <a href="/tag/release.html" class="set-5">release</a>
                   </div>
                 </div>
                 <div class="blog-data">
@@ -926,7 +983,7 @@ parallelizing multiple attention heads and SPMV optimization.</li>
                                     <ul>
                                         <li><a href="/pages/about.html">About us</a></li>
                                         <li><a href="/pages/start.html">Get started</a></li>
-                                        <li><a href="/pages/updates.html">Latest updates</a></li>
+                                        <li><a href="https://github.com/dmlc/dgl/releases">Latest updates</a></li>
                                         <li><a href="/pages/index.html">Blogs</a></li>
                                         <li><a href="https://github.com/dmlc/dgl/">Github</a></li>
                                     </ul>
@@ -946,21 +1003,19 @@ parallelizing multiple attention heads and SPMV optimization.</li>
                                 </div>
                             </div>
                         </div>
-                        <!--
                         <div class="col-sm-6 col-md-3">
                             <div class="single-footer">
-                                <h3 class="footer-heading">get support</h3>
-                                <p>Don’t miss our latest realeses and important updates</p>
+                                <h3 class="footer-heading">Contact Us</h3>
                                 <div class="subscribe-form">
-                                    <form action="https://formspree.io/your@email.com" method="post">
-                                        <input type="email" name="subscribe" id="subscribe" class="form-control" placeholder="Email" required>
-                                        <button type="submit" class="hover-bg">Go</button>
+                                    <form action="https://formspree.io/f/maylbdvy" method="POST">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                                        <input type="text" name="message" id="message" class="form-control" placeholder="Message" required>
+                                        <input type="email" name="_replyto" id="email" class="form-control" placeholder="Email" required>
+                                        <button type="submit" class="hover-bg">Submit</button>
                                     </form>
-                                    <span>We never do spam with you</span>
                                 </div>
                             </div>
                         </div>
-                        -->
                     </div>
                 </div>
             </div>
@@ -1004,6 +1059,11 @@ parallelizing multiple attention heads and SPMV optimization.</li>
 
     <!-- jquery min -->
     <script src="/assets/js/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.1/js/jquery.dataTables.min.js"></script>
+    
 
     <!-- Bootstrap Js -->
     <script src="/assets/js/bootstrap.min.js"></script>
